@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from auth.base_config import auth_backend, fastapi_users
 from auth.schemas import UserRead, UserCreate, UserUpdate
+from alembic import command
 
 # from operations.router import router as router_operation
 from services.router import router as router_services
@@ -46,3 +47,11 @@ app.include_router(
 
 # app.include_router(router_operation)
 app.include_router(router_services)
+
+
+
+def run_migrations_automatically():
+    command.upgrade('8ca3d3c445a4')
+
+if __name__ == "__main__":
+    run_migrations_automatically()
