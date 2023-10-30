@@ -14,19 +14,18 @@ app = FastAPI(
     title="Trading App"
 )
 
-origins = [
-    "https://client-i54l.onrender.com"
-]
 
 
 origins = [
     # "http://0.0.0.0:10000",
-    "http://0.0.0.0:3000",
-    "https://0.0.0.0:3000",
+    # "http://0.0.0.0:3000",
+    # "https://0.0.0.0:3000",
     # "http://localhost:3000",
-    # "http://techotes.onrender.com",
-    "https://client-i54l.onrender.com",
-    "http://client-i54l.onrender.com"
+    # # "http://techotes.onrender.com",
+    # "https://client-i54l.onrender.com",
+    # "http://client-i54l.onrender.com",
+    "http://client-i54l.lochalhost",
+    "https://client-i54l.lochalhost",
 ]
 
 
