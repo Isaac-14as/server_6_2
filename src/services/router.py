@@ -2,12 +2,12 @@ from fastapi import APIRouter, Depends
 from sqlalchemy import delete, select, insert, func
 from sqlalchemy.ext.asyncio import AsyncSession
 
-# from database import get_async_session
-# from services.models import Opportunity, InfoTrainer, SubscriptionType, Trainer
-# from services.schemas import OpportunityBase, InfoTrainerBase, SubscriptionTypeBase, TrainerBase
-from src.database import get_async_session
-from src.services.models import Opportunity, InfoTrainer, SubscriptionType, Trainer
-from src.services.schemas import OpportunityBase, InfoTrainerBase, SubscriptionTypeBase, TrainerBase
+from database import get_async_session
+from services.models import Opportunity, InfoTrainer, SubscriptionType, Trainer
+from services.schemas import OpportunityBase, InfoTrainerBase, SubscriptionTypeBase, TrainerBase
+# from src.database import get_async_session
+# from src.services.models import Opportunity, InfoTrainer, SubscriptionType, Trainer
+# from src.services.schemas import OpportunityBase, InfoTrainerBase, SubscriptionTypeBase, TrainerBase
 
 
 

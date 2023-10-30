@@ -2,11 +2,11 @@ from datetime import datetime
 
 from fastapi_users_db_sqlalchemy import SQLAlchemyBaseUserTable
 from sqlalchemy import Date, Table, Column, Integer, String, TIMESTAMP, ForeignKey, JSON, Boolean, MetaData, Float
-# from database import Base
-from src.database import Base
-# from services.models import SubscriptionType, Trainer
+from database import Base
+# from src.database import Base
+from services.models import SubscriptionType, Trainer
 
-from src.services.models import SubscriptionType, Trainer
+# from src.services.models import SubscriptionType, Trainer
 from sqlalchemy.orm import relationship
 
 metadata = MetaData()
