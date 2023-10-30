@@ -13,6 +13,8 @@ app = FastAPI(
 origins = [
     "http://localhost",
     "http://localhost:3000",
+    "http://techotes.onrender.com",
+    "https://client-i54l.onrender.com"
 ]
 app.add_middleware(
     CORSMiddleware,
