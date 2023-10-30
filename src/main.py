@@ -27,14 +27,24 @@ origins = [
 #     "http://techotes.onrender.com",
 #     "https://client-i54l.onrender.com"
 # ]
+
+
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=origins,
+#     allow_credentials=True,
+#     # allow_methods=["*"],
+#     allow_methods=["GET", "POST", "OPTIONS", "DELETE", "PATCH", "PUT"],
+#     allow_headers=["*"],
+#     expose_headers=["*"],
+# )
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=[""], # Allows all origins
     allow_credentials=True,
-    # allow_methods=["*"],
-    allow_methods=["GET", "POST", "OPTIONS", "DELETE", "PATCH", "PUT"],
-    allow_headers=["*"],
-    expose_headers=["*"],
+    allow_methods=[""], # Allows all methods
+    allow_headers=["*"], # Allows all headers
 )
 
 
