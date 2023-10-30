@@ -19,14 +19,15 @@ origins = [
 ]
 
 
-# origins = [
-
-#     "http://0.0.0.0:10000",
-#     "http://0.0.0.0:10000",
-#     # "http://localhost:3000",
-#     "http://techotes.onrender.com",
-#     "https://client-i54l.onrender.com"
-# ]
+origins = [
+    # "http://0.0.0.0:10000",
+    "http://0.0.0.0:3000",
+    "https://0.0.0.0:3000",
+    # "http://localhost:3000",
+    # "http://techotes.onrender.com",
+    "https://client-i54l.onrender.com",
+    "http://client-i54l.onrender.com"
+]
 
 
 # app.add_middleware(
@@ -41,17 +42,17 @@ origins = [
 
 # origins = ["*"]
 
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=origins,
-#     allow_credentials=True,
-#     allow_methods=["*"],
-#     allow_headers=["*"],
-# )
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*']
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=['*']
+# )
 
 # app.add_middleware(
 #     CORSMiddleware,
