@@ -41,10 +41,11 @@ origins = [
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # Allows all origins
+    allow_origins=["https://client-i54l.onrender.com"], # Allows all origins
     allow_credentials=True,
-    allow_methods=["*"], # Allows all methods
-    allow_headers=["*"], # Allows all headers
+    allow_methods=["GET", "POST", "OPTIONS", "DELETE", "PATCH", "PUT"], # Allows all methods
+    allow_headers=["Origin", "Authorization"], # Allows all headers
+    expose_headers=["Content-Length"],
 )
 
 
