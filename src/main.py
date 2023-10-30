@@ -14,11 +14,11 @@ app = FastAPI(
     title="Trading App"
 )
 
-origins = [
-    "http://0.0.0.0:10000",
-    # "http://localhost:3000",
-    "http://techotes.onrender.com",
-    "https://client-i54l.onrender.com"
+origins = ["*"
+    # "http://0.0.0.0:10000",
+    # # "http://localhost:3000",
+    # "http://techotes.onrender.com",
+    # "https://client-i54l.onrender.com"
 ]
 app.add_middleware(
     CORSMiddleware,
