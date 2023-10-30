@@ -1,12 +1,15 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from auth.base_config import auth_backend, fastapi_users
-from auth.schemas import UserRead, UserCreate, UserUpdate
+# from auth.base_config import auth_backend, fastapi_users
+# from auth.schemas import UserRead, UserCreate, UserUpdate
 from alembic import command
+from src.auth.base_config import auth_backend, fastapi_users
+from src.auth.schemas import UserRead, UserCreate, UserUpdate
 
 # from operations.router import router as router_operation
-from services.router import router as router_services
+# from services.router import router as router_services
+from src.services.router import router as router_services
 app = FastAPI(
     title="Trading App"
 )
