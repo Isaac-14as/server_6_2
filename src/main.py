@@ -15,8 +15,8 @@ app = FastAPI(
 )
 
 origins = [
-    "http://localhost",
-    "http://localhost:3000",
+    "http://0.0.0.0",
+    # "http://localhost:3000",
     "http://techotes.onrender.com",
     "https://client-i54l.onrender.com"
 ]
