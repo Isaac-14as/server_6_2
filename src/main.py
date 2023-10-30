@@ -53,8 +53,8 @@ app.include_router(router_services)
 
 
 
-def run_migrations_automatically():
-    command.upgrade('8ca3d3c445a4')
+# def run_migrations_automatically():
+#     command.upgrade('8ca3d3c445a4')
 
-if __name__ == "__main__":
-    run_migrations_automatically()
+# if __name__ == "__main__":
+#     run_migrations_automatically()
